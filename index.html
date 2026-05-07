@@ -3,69 +3,55 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Simple Website</title>
+    <title>Business Card</title>
     <style>
+        @import url('https://fonts.googleapis.com/css2?family=Bitcount+Single:wght@100..900&display=swap');
+
         body {
-            font-family: Arial, sans-serif;
-            line-height: 1.6;
-            margin: 0;
-            padding: 0;
-            background-color: #f4f4f4;
-            color: #333;
-        }
-        header {
-            background: #35424a;
-            color: #ffffff;
-            padding: 1rem 0;
-            text-align: center;
-        }
-        nav {
+            font-family: 'Bitcount Single', monospace;
+            background-color: white;
+            color: #555555;
             display: flex;
             justify-content: center;
-            background: #333;
-            padding: 0.5rem;
-        }
-        nav a {
-            color: white;
-            text-decoration: none;
-            padding: 0.5rem 1rem;
-        }
-        nav a:hover {
-            background: #575757;
-        }
-        .container {
-            width: 80%;
-            margin: auto;
-            overflow: hidden;
-            padding: 2rem 0;
-        }
-        footer {
-            background: #35424a;
-            color: #ffffff;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            padding: 0;
             text-align: center;
-            padding: 1rem 0;
-            position: fixed;
-            bottom: 0;
-            width: 100%;
+            line-height: 1.6;
+        }
+
+        .card {
+            max-width: 600px;
+            padding: 2rem;
+        }
+
+        .card h1 {
+            font-size: 2rem;
+            margin-bottom: 1rem;
+            color: #333333;
+        }
+
+        .card p {
+            font-size: 1.1rem;
+            margin: 0.5rem 0;
+        }
+
+        .card a {
+            color: #555555;
+            text-decoration: none;
+        }
+
+        .card a:hover {
+            color: #333333;
         }
     </style>
 </head>
 <body>
-    <header>
-        <h1>Welcome to My Simple Website</h1>
-    </header>
-    <nav>
-        <a href="#">Home</a>
-        <a href="#">About</a>
-        <a href="#">Services</a>
-        <a href="#">Contact</a>
-    </nav>
-    <div class="container">
-        <h2>About This Page</h2>
-        <p>This is a simple HTML website with embedded CSS. You can customize it as needed.</p>
+    <div class="card">
+        <h1>Your Name</h1>
+        <p>your.email@example.com</p>
+        <p><a href="https://yourwebsite.com" target="_blank">yourwebsite.com</a></p>
     </div>
-    <footer>
-        <p>&copy; 2026 My Simple Website</p>
-    </footer>
 </body>
 </html>
